@@ -1,2 +1,2 @@
 # NButtons
-Create n buttons and find out on click if you pressed the winner one.
+Create n buttons, press one and find out it is the winner one.
