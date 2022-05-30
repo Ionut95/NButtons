@@ -19,32 +19,11 @@
             <input type="number" id="myNumber" value="noBtns"> <button type="button" class="btn btn-primary" onclick="generate()">Generate</button>
           </div>
         </div>
-    </div>
-    <div>
-      <div class="card" id="myDiv" style="text-align:center">
+      </div>
+      <div class="card" style="text-align:center">
         <div class="card-body" id="myBody">
         </div>
       </div>
     </div>
-
-    <script>
-      function generate() {
-        var noBtns = document.getElementById("myNumber").value;
-        for (var index = 1; index <= noBtns; ++index) {
-          const button = document.createElement("button");
-          button.innerText = "Click me";
-          button.value = index;
-          button.addEventListener("click", function() {
-            var result = Math.floor(Math.random() * noBtns) + 1;
-            if (button.value == result) {
-               alert('You win!');
-            } else {
-               alert('You lose!');
-            }
-          });
-          document.body-myBody.appendChild(button);
-        }
-      }
-    </script>
   </body>
 </html>
